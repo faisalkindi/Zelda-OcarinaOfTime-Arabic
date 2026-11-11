@@ -30,11 +30,13 @@ Complete Arabic localization for The Legend of Zelda: Ocarina of Time (Switch 2,
 
 ## التثبيت على Hookshot
 
-1. حمّل ملف `Zelda-OcarinaOfTime-Arabic-v1.0.1.zip` وفك ضغطه داخل المجلد `mods` بجوار `hookshot.exe` (أنشئه إن لم يكن موجودًا)، فيصبح المسار `mods\OoT-Arabic\romfs`.
-2. افتح الملف `language.txt` في مجلد اللعبة واجعل اللغة `en-US` أو `en-GB`.
-3. شغّل اللعبة.
+1. ثبّت التعريب على ملف اللعبة (.nup) بالمثبّت كما في الخطوات أعلاه. إن طلب المثبّت مجلد المحاكي فاضغط Cancel.
+2. ابنِ اللعبة من ملف الـ nup هذا بـ Hookshot Builder. إن كانت اللعبة مبنية من قبل فأعد بناءها، لأن Hookshot يحتفظ بنسخته الخاصة من ملفات اللعبة ولا يقرأ الـ nup بعد البناء.
+3. افتح الملف `language.txt` في مجلد اللعبة واجعل اللغة `en-US` أو `en-GB`، ثم شغّل اللعبة.
 
-للإزالة احذف المجلد `mods\OoT-Arabic`. لا يطبّق Hookshot تعديل اتجاه ظهور النص، فيظهر النص فيه من اليسار إلى اليمين مع بقائه بمحاذاة اليمين.
+لا يطبّق Hookshot تعديل اتجاه ظهور النص، فيظهر النص فيه من اليسار إلى اليمين مع بقائه بمحاذاة اليمين.
+
+طريقة بديلة لم تُجرَّب بعد: فك ضغط ملف `Zelda-OcarinaOfTime-Arabic-v1.0.1.zip` داخل المجلد `mods` بجوار `hookshot.exe`، فيصبح المسار `mods\OoT-Arabic\romfs`. قد تعود فيها بعض صور الأزرار إلى أزرار Switch.
 
 ## التثبيت عبر ملف ZIP على المحاكي
 
@@ -67,7 +69,7 @@ Full Arabic localization of The Legend of Zelda: Ocarina of Time (Nintendo Switc
 
 **Install:** close the emulator, run `Zelda-OcarinaOfTime-Arabic-v1.0.1.exe` from [Releases](../../releases/latest) and click the install button, then set the emulator's System language to American or British English. The installer writes the files into your `.nup`, which grows by about 75 MB, and keeps the undo data inside it. Its uninstall button restores the file byte for byte.
 
-**Hookshot:** unzip `Zelda-OcarinaOfTime-Arabic-v1.0.1.zip` into the `mods` folder next to `hookshot.exe` (giving `mods\OoT-Arabic\romfs`) and set `language.txt` to `en-US` or `en-GB`. Hookshot does not apply ExeFS patches, so there the text reveals left to right (still right-aligned).
+**Hookshot:** install the translation into the `.nup` with the installer (cancel its emulator-folder prompt), then build the game from that `.nup` with Hookshot Builder; a game built earlier must be rebuilt, since Hookshot keeps its own copy of the game files. Set `language.txt` to `en-US` or `en-GB`. Hookshot does not apply ExeFS patches, so there the text reveals left to right (still right-aligned). Untested alternative: unzip `Zelda-OcarinaOfTime-Arabic-v1.0.1.zip` into the `mods` folder next to `hookshot.exe`; some button pictures may go back to Switch buttons.
 
 **Zip on an emulator:** `Zelda-OcarinaOfTime-Arabic-v1.0.1.zip` is for Configure Game > Add-Ons > Import Mod from ZIP. It leaves the game file alone, but only works on NUP games in emulator builds that apply RomFS mods to them, which does not include Lichii build 88.
 
