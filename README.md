@@ -10,12 +10,12 @@ Complete Arabic localization for The Legend of Zelda: Ocarina of Time (Switch 2,
 ## المتطلبات
 
 - ملف اللعبة بصيغة NUP، الإصدار 1.1.1.
-- محاكي Lichii على Windows. جُرّب التعريب عليه، ولم يُجرَّب بعد على Eglantine.
+- محاكي Lichii على Windows، أو Hookshot (نسخة الحاسوب الأصلية من اللعبة). جُرّب التعريب عليهما، ولم يُجرَّب بعد على Eglantine.
 - نحو 75 ميجابايت من المساحة الفارغة على قرص اللعبة.
 
 ## التحميل
 
-من صفحة [الإصدارات](../../releases/latest) حمّل ملف `Zelda-OcarinaOfTime-Arabic-v1.0.0.exe`.
+من صفحة [الإصدارات](../../releases/latest) حمّل ملف `Zelda-OcarinaOfTime-Arabic-v1.0.1.exe`.
 
 ## التثبيت
 
@@ -28,9 +28,17 @@ Complete Arabic localization for The Legend of Zelda: Ocarina of Time (Switch 2,
 
 للإزالة: شغّل المثبّت واضغط «إزالة التعريب»، فيعود ملف اللعبة كما كان تمامًا.
 
-## التثبيت عبر ملف ZIP
+## التثبيت على Hookshot
 
-الملف `Zelda-OcarinaOfTime-Arabic-v1.0.0.zip` يُستورد من Configure Game ← Add-Ons ← Import Mod from ZIP، ولا يعدّل ملف اللعبة. لكنه لا يعمل مع ملفات NUP إلا في إصدارات المحاكي التي تطبّق تعديلات الملفات عليها، ولا يشمل ذلك Lichii build 88. إن لم تكن متأكدًا، استخدم المثبّت.
+1. حمّل ملف `Zelda-OcarinaOfTime-Arabic-v1.0.1.zip` وفك ضغطه داخل المجلد `mods` بجوار `hookshot.exe` (أنشئه إن لم يكن موجودًا)، فيصبح المسار `mods\OoT-Arabic\romfs`.
+2. افتح الملف `language.txt` في مجلد اللعبة واجعل اللغة `en-US` أو `en-GB`.
+3. شغّل اللعبة.
+
+للإزالة احذف المجلد `mods\OoT-Arabic`. لا يطبّق Hookshot تعديل اتجاه ظهور النص، فيظهر النص فيه من اليسار إلى اليمين مع بقائه بمحاذاة اليمين.
+
+## التثبيت عبر ملف ZIP على المحاكي
+
+الملف `Zelda-OcarinaOfTime-Arabic-v1.0.1.zip` يُستورد من Configure Game ← Add-Ons ← Import Mod from ZIP، ولا يعدّل ملف اللعبة. لكنه لا يعمل مع ملفات NUP إلا في إصدارات المحاكي التي تطبّق تعديلات الملفات عليها، ولا يشمل ذلك Lichii build 88. إن لم تكن متأكدًا، استخدم المثبّت.
 
 ## تنبيه
 
@@ -55,11 +63,13 @@ Complete Arabic localization for The Legend of Zelda: Ocarina of Time (Switch 2,
 
 Full Arabic localization of The Legend of Zelda: Ocarina of Time (Nintendo Switch 2, version 1.1.1), translated directly from the original Japanese script: 20,613 lines covering the story and dialogue, items and enemies, menus, and an Arabic title logo. Text reveals from right to left.
 
-**Needs:** the game as a NUP file (version 1.1.1) and the Lichii emulator on Windows. It was tested on Lichii and has not yet been tried on Eglantine.
+**Needs:** the game as a NUP file (version 1.1.1) and the Lichii emulator or Hookshot on Windows. It was tested on Lichii and Hookshot and has not yet been tried on Eglantine.
 
-**Install:** close the emulator, run `Zelda-OcarinaOfTime-Arabic-v1.0.0.exe` from [Releases](../../releases/latest) and click the install button, then set the emulator's System language to American or British English. The installer writes the files into your `.nup`, which grows by about 75 MB, and keeps the undo data inside it. Its uninstall button restores the file byte for byte.
+**Install:** close the emulator, run `Zelda-OcarinaOfTime-Arabic-v1.0.1.exe` from [Releases](../../releases/latest) and click the install button, then set the emulator's System language to American or British English. The installer writes the files into your `.nup`, which grows by about 75 MB, and keeps the undo data inside it. Its uninstall button restores the file byte for byte.
 
-**Zip:** `Zelda-OcarinaOfTime-Arabic-v1.0.0.zip` is for Configure Game > Add-Ons > Import Mod from ZIP. It leaves the game file alone, but only works on NUP games in emulator builds that apply RomFS mods to them, which does not include Lichii build 88.
+**Hookshot:** unzip `Zelda-OcarinaOfTime-Arabic-v1.0.1.zip` into the `mods` folder next to `hookshot.exe` (giving `mods\OoT-Arabic\romfs`) and set `language.txt` to `en-US` or `en-GB`. Hookshot does not apply ExeFS patches, so there the text reveals left to right (still right-aligned).
+
+**Zip on an emulator:** `Zelda-OcarinaOfTime-Arabic-v1.0.1.zip` is for Configure Game > Add-Ons > Import Mod from ZIP. It leaves the game file alone, but only works on NUP games in emulator builds that apply RomFS mods to them, which does not include Lichii build 88.
 
 **Limits:** Arabic replaces English; the logo, fonts and reveal direction change for every language while it is installed; version 1.1.1 only; not for a real Switch 2.
 
