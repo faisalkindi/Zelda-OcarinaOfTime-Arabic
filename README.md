@@ -10,7 +10,7 @@ Complete Arabic localization for The Legend of Zelda: Ocarina of Time (Switch 2,
 ## المتطلبات
 
 - ملف اللعبة بصيغة NUP، الإصدار 1.1.1.
-- محاكي Lichii على Windows، أو Hookshot (نسخة الحاسوب الأصلية من اللعبة). جُرّب التعريب عليهما، ولم يُجرَّب بعد على Eglantine.
+- محاكي Lichii على Windows، أو Hookshot أو Triforce (نسختا الحاسوب الأصليتان من اللعبة). جُرّب التعريب عليها كلها، ولم يُجرَّب بعد على Eglantine.
 - نحو 75 ميجابايت من المساحة الفارغة على قرص اللعبة.
 
 ## التحميل
@@ -37,6 +37,10 @@ Complete Arabic localization for The Legend of Zelda: Ocarina of Time (Switch 2,
 لا يطبّق Hookshot تعديل اتجاه ظهور النص، فيظهر النص فيه من اليسار إلى اليمين مع بقائه بمحاذاة اليمين.
 
 طريقة بديلة لم تُجرَّب بعد: فك ضغط ملف `Zelda-OcarinaOfTime-Arabic-v1.0.1.zip` داخل المجلد `mods` بجوار `hookshot.exe`، فيصبح المسار `mods\OoT-Arabic\romfs`. قد تعود فيها بعض صور الأزرار إلى أزرار Switch.
+
+## التثبيت على Triforce
+
+الطريقة نفسها: ثبّت التعريب على ملف الـ nup بالمثبّت، ثم ابنِ اللعبة منه بـ Triforce (وأعد بناءها إن كانت مبنية من قبل)، واجعل اللغة في الملف `language.txt` بجوار `Triforce.exe` هي `en-US` أو `en-GB`.
 
 ## التثبيت عبر ملف ZIP على المحاكي
 
@@ -65,11 +69,13 @@ Complete Arabic localization for The Legend of Zelda: Ocarina of Time (Switch 2,
 
 Full Arabic localization of The Legend of Zelda: Ocarina of Time (Nintendo Switch 2, version 1.1.1), translated directly from the original Japanese script: 20,613 lines covering the story and dialogue, items and enemies, menus, and an Arabic title logo. Text reveals from right to left.
 
-**Needs:** the game as a NUP file (version 1.1.1) and the Lichii emulator or Hookshot on Windows. It was tested on Lichii and Hookshot and has not yet been tried on Eglantine.
+**Needs:** the game as a NUP file (version 1.1.1) and the Lichii emulator, Hookshot or Triforce on Windows. It was tested on Lichii, Hookshot and Triforce and has not yet been tried on Eglantine.
 
 **Install:** close the emulator, run `Zelda-OcarinaOfTime-Arabic-v1.0.1.exe` from [Releases](../../releases/latest) and click the install button, then set the emulator's System language to American or British English. The installer writes the files into your `.nup`, which grows by about 75 MB, and keeps the undo data inside it. Its uninstall button restores the file byte for byte.
 
 **Hookshot:** install the translation into the `.nup` with the installer (cancel its emulator-folder prompt), then build the game from that `.nup` with Hookshot Builder; a game built earlier must be rebuilt, since Hookshot keeps its own copy of the game files. Set `language.txt` to `en-US` or `en-GB`. Hookshot does not apply ExeFS patches, so there the text reveals left to right (still right-aligned). Untested alternative: unzip `Zelda-OcarinaOfTime-Arabic-v1.0.1.zip` into the `mods` folder next to `hookshot.exe`; some button pictures may go back to Switch buttons.
+
+**Triforce:** same route: install into the `.nup` with the installer, build the game from it with Triforce (rebuild a game built earlier), and set `language.txt` next to `Triforce.exe` to `en-US` or `en-GB`.
 
 **Zip on an emulator:** `Zelda-OcarinaOfTime-Arabic-v1.0.1.zip` is for Configure Game > Add-Ons > Import Mod from ZIP. It leaves the game file alone, but only works on NUP games in emulator builds that apply RomFS mods to them, which does not include Lichii build 88.
 
